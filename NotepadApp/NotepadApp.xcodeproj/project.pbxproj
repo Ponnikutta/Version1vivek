@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F55FBA9228CDD347009C7CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FBA9128CDD347009C7CBC /* AppDelegate.swift */; };
+		F55FBA9428CDD347009C7CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FBA9328CDD347009C7CBC /* SceneDelegate.swift */; };
+		F55FBA9628CDD347009C7CBC /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FBA9528CDD347009C7CBC /* NotesListViewController.swift */; };
+		F55FBA9C28CDD347009C7CBC /* NotepadApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F55FBA9A28CDD347009C7CBC /* NotepadApp.xcdatamodeld */; };
+		F55FBA9E28CDD34A009C7CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55FBA9D28CDD34A009C7CBC /* Assets.xcassets */; };
+		F55FBAA128CDD34A009C7CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55FBA9F28CDD34A009C7CBC /* LaunchScreen.storyboard */; };
+		F55FBAAC28CDEA5B009C7CBC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FBAAB28CDEA5B009C7CBC /* CustomTableViewCell.swift */; };
+		F55FBAAE28CE0C6A009C7CBC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FBAAD28CE0C6A009C7CBC /* Item.swift */; };
+		F59DD86828CEDAAF00B98351 /* TextEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59DD86728CEDAAF00B98351 /* TextEditorViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F55FBA8E28CDD347009C7CBC /* NotepadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotepadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55FBA9128CDD347009C7CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F55FBA9328CDD347009C7CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F55FBA9528CDD347009C7CBC /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
+		F55FBA9B28CDD347009C7CBC /* NotepadApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotepadApp.xcdatamodel; sourceTree = "<group>"; };
+		F55FBA9D28CDD34A009C7CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F55FBAA028CDD34A009C7CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F55FBAA228CDD34A009C7CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F55FBAAB28CDEA5B009C7CBC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		F55FBAAD28CE0C6A009C7CBC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F59DD86728CEDAAF00B98351 /* TextEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F55FBA8B28CDD347009C7CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F55FBA8528CDD347009C7CBC = {
+			isa = PBXGroup;
+			children = (
+				F55FBA9028CDD347009C7CBC /* NotepadApp */,
+				F55FBA8F28CDD347009C7CBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F55FBA8F28CDD347009C7CBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F55FBA8E28CDD347009C7CBC /* NotepadApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F55FBA9028CDD347009C7CBC /* NotepadApp */ = {
+			isa = PBXGroup;
+			children = (
+				F55FBA9128CDD347009C7CBC /* AppDelegate.swift */,
+				F55FBA9328CDD347009C7CBC /* SceneDelegate.swift */,
+				F55FBAAA28CDDE78009C7CBC /* Model */,
+				F55FBAA928CDDE72009C7CBC /* View */,
+				F55FBAA828CDDE62009C7CBC /* Controller */,
+				F55FBA9D28CDD34A009C7CBC /* Assets.xcassets */,
+				F55FBA9F28CDD34A009C7CBC /* LaunchScreen.storyboard */,
+				F55FBAA228CDD34A009C7CBC /* Info.plist */,
+				F55FBA9A28CDD347009C7CBC /* NotepadApp.xcdatamodeld */,
+			);
+			path = NotepadApp;
+			sourceTree = "<group>";
+		};
+		F55FBAA828CDDE62009C7CBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F55FBA9528CDD347009C7CBC /* NotesListViewController.swift */,
+				F59DD86728CEDAAF00B98351 /* TextEditorViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F55FBAA928CDDE72009C7CBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F55FBAAA28CDDE78009C7CBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F55FBAAB28CDEA5B009C7CBC /* CustomTableViewCell.swift */,
+				F55FBAAD28CE0C6A009C7CBC /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F55FBA8D28CDD347009C7CBC /* NotepadApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F55FBAA528CDD34A009C7CBC /* Build configuration list for PBXNativeTarget "NotepadApp" */;
+			buildPhases = (
+				F55FBA8A28CDD347009C7CBC /* Sources */,
+				F55FBA8B28CDD347009C7CBC /* Frameworks */,
+				F55FBA8C28CDD347009C7CBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotepadApp;
+			productName = NotepadApp;
+			productReference = F55FBA8E28CDD347009C7CBC /* NotepadApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F55FBA8628CDD347009C7CBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F55FBA8D28CDD347009C7CBC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F55FBA8928CDD347009C7CBC /* Build configuration list for PBXProject "NotepadApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F55FBA8528CDD347009C7CBC;
+			productRefGroup = F55FBA8F28CDD347009C7CBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F55FBA8D28CDD347009C7CBC /* NotepadApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F55FBA8C28CDD347009C7CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55FBAA128CDD34A009C7CBC /* LaunchScreen.storyboard in Resources */,
+				F55FBA9E28CDD34A009C7CBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F55FBA8A28CDD347009C7CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55FBA9628CDD347009C7CBC /* NotesListViewController.swift in Sources */,
+				F55FBAAC28CDEA5B009C7CBC /* CustomTableViewCell.swift in Sources */,
+				F55FBA9228CDD347009C7CBC /* AppDelegate.swift in Sources */,
+				F55FBA9428CDD347009C7CBC /* SceneDelegate.swift in Sources */,
+				F55FBAAE28CE0C6A009C7CBC /* Item.swift in Sources */,
+				F55FBA9C28CDD347009C7CBC /* NotepadApp.xcdatamodeld in Sources */,
+				F59DD86828CEDAAF00B98351 /* TextEditorViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F55FBA9F28CDD34A009C7CBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F55FBAA028CDD34A009C7CBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F55FBAA328CDD34A009C7CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F55FBAA428CDD34A009C7CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F55FBAA628CDD34A009C7CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LNVK7X3C2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotepadApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viveklakshmanan.NotepadApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F55FBAA728CDD34A009C7CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LNVK7X3C2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotepadApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viveklakshmanan.NotepadApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F55FBA8928CDD347009C7CBC /* Build configuration list for PBXProject "NotepadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F55FBAA328CDD34A009C7CBC /* Debug */,
+				F55FBAA428CDD34A009C7CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F55FBAA528CDD34A009C7CBC /* Build configuration list for PBXNativeTarget "NotepadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F55FBAA628CDD34A009C7CBC /* Debug */,
+				F55FBAA728CDD34A009C7CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F55FBA9A28CDD347009C7CBC /* NotepadApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F55FBA9B28CDD347009C7CBC /* NotepadApp.xcdatamodel */,
+			);
+			currentVersion = F55FBA9B28CDD347009C7CBC /* NotepadApp.xcdatamodel */;
+			path = NotepadApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F55FBA8628CDD347009C7CBC /* Project object */;
+}

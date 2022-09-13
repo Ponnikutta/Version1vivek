@@ -1,0 +1,53 @@
+//
+//  SceneDelegate.swift
+//  NotepadApp
+//
+//  Created by Vivek Lakshmanan on 11/09/22.
+//
+
+import UIKit
+
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        // vivek - 1 - Entered
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        window = UIWindow(windowScene: windowScene)
+        window?.makeKeyAndVisible()
+        let controller = NotesListViewController()
+        let navController = UINavigationController(rootViewController: controller)
+        window?.rootViewController = navController
+        
+        // Closing
+    }
+
+    func sceneDidDisconnect(_ scene: UIScene) {
+
+    }
+
+    func sceneDidBecomeActive(_ scene: UIScene) {
+
+    }
+
+    func sceneWillResignActive(_ scene: UIScene) {
+
+    }
+
+    func sceneWillEnterForeground(_ scene: UIScene) {
+
+    }
+
+    func sceneDidEnterBackground(_ scene: UIScene) {
+
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    }
+
+
+}
+
